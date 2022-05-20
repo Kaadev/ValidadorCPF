@@ -56,3 +56,10 @@ function validacao() { //adicionando função js no botão HTML
     document.getElementById("error").style.display="block"; //caso o cpf seja invalido ele mostrará a msg de erro
   }
 }
+
+function clickPress(event) {
+  if (event.keyCode == 13) {
+      event.preventDefault();
+      validacao()
+  }
+}
